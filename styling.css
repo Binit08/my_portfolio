@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    background-color: #151515;
+    font-family:  sans-serif;
+    background-image: url("bodyback4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.book {
+    position: relative;
+    width: 450px;
+    height: 600px;
+    transition: transform 0.5s;
+
+  
+    
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+    
+    
+}
+
+#f1{
+background-image: url(cover5.jpg) ;
+background-repeat: no-repeat;
+color: white ;
+border-image: url(border.jpg);
+background-size: cover;
+
+}
+#t1{
+    position: absolute;
+    top: 229PX;
+    FONT-SIZE: 17PX;
+}
+.front,
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+    /* border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px; */
+  
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    
+    
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 48px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #636363;
+}
+
+i {
+    font-size: 50px;
+    color: grey;
+    z-index: 15;
+
+}
+
+
+#p1 {
+    z-index: 3;
+  
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
+}
+#b3{
+
+    width: 100%;
+    background: transparent; border: var(--border); 
+    padding: .8rem; 
+    font-size: 1rem; 
+    color: var(--text-color); 
+    margin-bottom: 1.5rem;
+}
+.me{
+position: absolute;
+top:40px;
+color: white;
+
+}
+.h2{
+    position: relative;
+    top: -122px;
+   
+color: white;
+    left:70px;
+}
+
+
+
+.con
+{
+    margin: 20px;
+}
+.logo{
+    border: 2px solid black;
+    margin: 6px;
+    padding: 6px;
+}
+.logomain{
+
+    position: relative;
+    top: 70px;
+    left: -70px;
+}
+#b1{
+    position: relative;
+    background-image: url("page8.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#hello{
+    position: relative;
+    TOP: -102PX;
+    LEFT: -67PX;
+    color: white;
+}
+
+#name{
+
+    position: ABSOLUTE;
+    top: 245PX;
+    color: white;
+    LEFT: 218PX;
+}
+
+#web
+{
+    position: absolute;
+    LEFT: 74PX;
+    TOP: 324PX;
+    color: white;
+}
+.h4{
+    position: absolute;
+    text-align: justify;
+    padding: 20PX;
+    TOP: 93PX;
+    LEFT: 7PX;
+    color: white;
+}
+
+
+.h5{
+    text-align: justify;
+    position: absolute;
+    top: 417px;
+    left: 9px;
+    padding: 21px;
+    color: white;
+}
+.me2{
+    position: relative;
+    top: 66px;
+    color: white;
+}
+.btn2{
+    border: 2px solid white;
+    position: absolute;
+    top: 373px;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    left: 178px;
+    text-transform: uppercase;
+    font-family: 'Vast Shadow', serif;
+}
+.btn2:hover{
+    background-color: #ccccccd7;
+    
+}
+#b2{
+    background-image: url("page112.JPG");
+    background-repeat: no-repeat;
+}
+#f3{
+    background-image: url("page70.jpg");
+    background-repeat: no-repeat;
+}
+.logo ,i{
+    color: white;
+}
+#b3{
+    background-image: url("page6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#f2{
+    background-image: url("https://res.cloudinary.com/dfcqk24nz/image/upload/v1705862575/yegl2necykrtcps0etkl.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.photo{
+
+   position: absolute;
+   top: 85px;
+   left: 108px;
+}
+textarea,input{
+    background-color: transparent;
+    border: 1px solid white;
+    
+}
+::placeholder{
+    color: white;
+ text-transform: uppercase;
+ padding: 4px;
+
+}
+.btn{
+    color:white;
+    text-transform: uppercase;
+    padding: 4px;
+    font-family: 'Vast Shadow';
+}
+.logo2{
+    position: absolute;
+    top: 527px;
+    left: 40px;
+}
+.logo3{
+    position: absolute;
+    top: 527px;
+    left: 109px;
+}
+.logo4{
+    position: absolute;
+    top: 527px;
+    left: 178px;
+}
+.logo5{
+    position: absolute;
+    top: 527px;
+    left: 250px;
+}
+#right{
+    position: absolute;
+    bottom: 10px;
+right: 2px;
+font-size: 7px;
+color: white;
+}
+.field{
+    color: white ;
+    font-family: 'Vast Shadow', serif;
+
+}
+.btn:hover{
+   background-color: rgba(184, 27, 186, 0.915);
+   color: pink;
+}
+
+
+
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
